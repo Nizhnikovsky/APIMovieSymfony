@@ -1,0 +1,8 @@
+api_moove:
+    resource: "@APIMovieBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

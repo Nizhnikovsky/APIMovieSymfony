@@ -1,0 +1,4 @@
+services:
+    user.service:
+        class: APIMovieBundle\Service\UserService
+        arguments: ["@doctrine.orm.entity_manager"]

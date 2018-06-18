@@ -1,0 +1,28 @@
+{% extends "::base.html.twig" %}
+
+{% block content %}
+    <div class="container">
+        <br>
+        <br>
+        {% if message != '' %}
+            <div class="alert alert-danger" role="alert">
+                <strong>{{ message }}</strong>
+            </div>
+       {% else %}
+        <div class="starter-template">
+<h4 align="center"><strong>{{ film.Title }}</strong> </h4>
+        </div>
+        <img src="{{ film.Poster }}" alt="" align="center">
+        <p>Film Title: {{ film.Title }}</p>
+        <p>Actors :{{ film.Actors }}</p>
+        <p>Awards:{{ film.Awards }}</p>
+        <p>Country: {{ film.Country }}</p>
+        <p>Genre: {{ film.Genre }}</p>
+        <p>Language: {{ film.Language }}</p>
+        <p>Production: {{ film.Production }}</p>
+        <p>Released: {{ film.Released }}</p>
+        <p>Writer: {{ film.Writer }}</p>
+        <p>Year: {{ film.Year }}</p>
+    </div>
+        {% endif %}
+{% endblock %}
